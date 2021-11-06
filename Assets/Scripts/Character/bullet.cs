@@ -18,8 +18,6 @@ public class bullet : MonoBehaviour
             switch (other.tag)
             {
                 case "Enemy":
-                    Debug.Log("ебать копать");
-
                     Destroy(gameObject);
                     other.GetComponent<Enemes>().HitD(damage);
                     break;

@@ -31,7 +31,6 @@ public class SkinsShop : MonoBehaviour
             int x = i;
             buttons[i].selectedButton.GetComponent<Button>().onClick.AddListener(() => SelectPerson(x));
             buttons[i].buyBtn.GetComponent<Button>().onClick.AddListener(() => BuyPerson(x));
-            Debug.Log(string.Format("Кнопка номаер {0} назначена, значение  {1}", i,x));
         }
     }
 
